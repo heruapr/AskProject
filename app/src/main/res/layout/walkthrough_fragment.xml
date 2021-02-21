@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp"
+            android:textSize="18sp"
+             />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="0"
+        android:visibility="gone"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/myrect"
+        tools:text="@string/walktrough_start"
+        tools:visibility="visible" />
+</LinearLayout>

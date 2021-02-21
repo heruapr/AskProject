@@ -7,4 +7,5 @@
     <string name="login">Login</string>
     <string name="register">Do not have an account? Register now</string>
     <string name="retype_password">Retype Password</string>
+    <string name="walktrough_start">Let\'s Start!</string>
 </resources>

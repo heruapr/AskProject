@@ -25,6 +25,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -51,6 +52,7 @@ dependencies {
     //anim
     def dynamicanimation_version = '1.0.0'
     implementation "androidx.dynamicanimation:dynamicanimation:$dynamicanimation_version"
+    implementation 'com.cuberto:liquid-swipe:1.0.0'
 
     //ui core
     def fragment_version = "1.2.5"
@@ -71,4 +73,41 @@ dependencies {
 
     // Jetpack Compose Integration
     implementation "androidx.navigation:navigation-compose:1.0.0-alpha07"
+
+    // Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$kotlin_coroutines_version"
+
+    // Koin
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    implementation "org.koin:koin-androidx-ext:$koin_version"
+
+    // Jetpack Arch
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation 'androidx.work:work-runtime-ktx:2.3.4'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.paging:paging-runtime-ktx:2.1.2'
+
+    // OkHttp
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
 }

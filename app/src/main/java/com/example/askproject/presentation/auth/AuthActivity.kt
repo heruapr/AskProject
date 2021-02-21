@@ -1,5 +1,7 @@
 package com.example.askproject.presentation.auth
 
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Explode
@@ -17,5 +19,10 @@ class AuthActivity : AppCompatActivity() {
             exitTransition = Explode()
         }
         setContentView(R.layout.activity_auth)
+        val sharedPref: SharedPreferences =
+            getSharedPreferences("IS_WALKTHROUGH", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("IS_WALKTHROUGH", false)
+        editor.apply()
     }
 }
