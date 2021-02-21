@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anon</string>
+    <string name="hello_this_is_splash_screen">HELLO! THIS IS SPLASH SCREEN</string>
+    <string name="hello_this_is_mainactivity">Hello ! This is MainActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Do not have an account? Register now</string>
+    <string name="retype_password">Retype Password</string>
+</resources>
