@@ -34,9 +34,11 @@ class LoginFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        var shakeAnim = AnimationUtils.loadAnimation(requireActivity(), R.anim.shake)
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
         // TODO: Use the ViewModel
 //        loginButton.startAnimation(shakeAnim)
+        iconImageView.startAnimation(shakeAnim)
         loginButton.setOnClickListener {
             startActivity(
                 Intent(requireActivity(), MainActivity::class.java),

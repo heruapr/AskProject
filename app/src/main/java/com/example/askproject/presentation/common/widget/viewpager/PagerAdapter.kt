@@ -8,9 +8,9 @@ import com.example.askproject.presentation.walktrough.WalkthroughFragment
 /** 2021-02-21 12:47 Created by: Heru Apr */
 class PagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     private val pages = listOf(
-        WalkthroughFragment.newInstance("Haloo"),
-        WalkthroughFragment.newInstance("Haloo duaa"),
-        WalkthroughFragment.newInstance("Haloo tigaaa", "Mulaii!")
+        WalkthroughFragment.newInstance("HELLO THERE!", index = 0),
+        WalkthroughFragment.newInstance("Udah Siap?", index = 1),
+        WalkthroughFragment.newInstance("Kamu Sudah Siap!", "Mulai!", 2)
     )
 
     override fun getCount(): Int {

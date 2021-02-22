@@ -7,6 +7,8 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.WindowManager
+import android.view.animation.AnimationUtils
 import com.example.askproject.R
 import com.example.askproject.presentation.auth.AuthActivity
 import com.example.askproject.presentation.main.MainActivity
@@ -19,6 +21,12 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
+        var shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake)
+        splashIcon.startAnimation(shakeAnim)
         supportActionBar?.hide()
         val sharedPref: SharedPreferences =
             getSharedPreferences("IS_WALKTHROUGH", Context.MODE_PRIVATE)

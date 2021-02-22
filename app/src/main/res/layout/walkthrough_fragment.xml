@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,29 +12,42 @@
         android:layout_weight="1"
         android:fillViewport="true">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
         <TextView
             android:id="@+id/infoTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
             android:paddingStart="40dp"
             android:paddingTop="20dp"
             android:paddingEnd="40dp"
             android:paddingBottom="20dp"
-            android:textSize="18sp"
+            android:textSize="60sp"
              />
+
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="0"
+            android:background="@drawable/myrect"
+            android:outlineAmbientShadowColor="@color/white"
+            android:visibility="gone"
+            tools:text="@string/walktrough_start"
+            tools:visibility="visible" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/actionButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_weight="0"
-        android:visibility="gone"
-        android:layout_marginBottom="48dp"
-        android:background="@drawable/myrect"
-        tools:text="@string/walktrough_start"
-        tools:visibility="visible" />
 </LinearLayout>

@@ -19,10 +19,10 @@ class AuthActivity : AppCompatActivity() {
             exitTransition = Explode()
         }
         setContentView(R.layout.activity_auth)
-        val sharedPref: SharedPreferences =
-            getSharedPreferences("IS_WALKTHROUGH", Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
-        editor.putBoolean("IS_WALKTHROUGH", false)
-        editor.apply()
+//        val sharedPref: SharedPreferences =
+//            getSharedPreferences("IS_WALKTHROUGH", Context.MODE_PRIVATE)
+//        val editor = sharedPref.edit()
+//        editor.putBoolean("IS_WALKTHROUGH", false)
+//        editor.apply()
     }
 }
