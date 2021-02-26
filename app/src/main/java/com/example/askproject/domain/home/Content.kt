@@ -9,7 +9,9 @@ data class Content(
     val id: Int,
     val name: String,
     val post: String,
-    val img: String
+    val img: String,
+    val timeRemaining: Long,
+    val progress: Double
 ) : Parcelable {
     data class Post(
         val id: Int,

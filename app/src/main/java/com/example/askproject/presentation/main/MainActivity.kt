@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.transition.Explode
 import android.view.Window
 import android.view.animation.AnimationUtils
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.updatePadding
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
